@@ -106,4 +106,8 @@
         display: none;
     }
 
+    .registry-title{
+        font-size: 30px;
+    }
+
 }
