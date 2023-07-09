@@ -110,6 +110,10 @@
         font-size: 30px;
     }
 
+    .registry-form{
+        width: 65%;
+    }
+
     .login-intro {
         font-size: 35px;
     }
