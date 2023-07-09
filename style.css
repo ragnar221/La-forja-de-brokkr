@@ -192,7 +192,7 @@ a{
     color: antiquewhite;
     font-weight: 400;
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .item-title {
@@ -204,7 +204,7 @@ a{
 .item-price{
     color: rgb(63, 223, 63);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 26px;
     font-family: 'PT Sans Narrow', sans-serif;
 }    
 
@@ -234,12 +234,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .item-quantity{
     color: whitesmoke;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -297,7 +298,7 @@ a{
     font-family: 'pt sans narrow';
     color: antiquewhite;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     cursor: pointer;
 }
 
@@ -445,7 +446,7 @@ h1{
     background-color: rgb(200, 200, 159);
     font-size: 24px;
     font-family: 'bacasime antique';
-    color: antiquewhite;
+    color: black;
     padding: 8px 10px;
     border: none;
     border-radius: 1em;
@@ -456,6 +457,7 @@ h1{
     background-color: rgb(57, 57, 54);
     box-shadow: red 1px 2px 2px 4px;
     font-weight: 600;
+    color: antiquewhite ;
 }
 
 .card-container{

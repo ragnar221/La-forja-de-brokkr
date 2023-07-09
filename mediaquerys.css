@@ -110,4 +110,12 @@
         font-size: 30px;
     }
 
+    .login-intro {
+        font-size: 35px;
+    }
+
+    .login-area{
+        width:60%;
+    }
+
 }
