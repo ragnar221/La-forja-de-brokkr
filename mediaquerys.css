@@ -1,107 +1,85 @@
 @media (max-width:992px) {
-
-    nav{
-        justify-content: end;
-        max-width: 992px;
-        width: 100vh;
+    .nav {
+        gap: 150px;
     }
-    
+
     .nav-links{
-        display: none;
         position: absolute;
         top: 65px;
-        left: 75%;
+        left: 5%;
+        right: 5%;
         width: 90%;
+        flex-direction: column;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
         z-index: 2;
+        display: none;
     }
 
-    
-    
-    .menu-icon{
+    .menu-icon {
         display: flex;
+        order: 2;
+        cursor: pointer;
     }
-    
-    
+
     .open-menu{
         display: flex;
-        z-index: 2;
-        flex-direction: column;
+        background-image: url(/assets/images/wood-floor.jpg);
         width: 200px;
-        height: 300px;
-        background: url(/assets/images/wood-floor.jpg);
-        border-radius: 1em;
-        border-style: double;
-        gap: 30px;
-        font-size: 20px;
-    }
-    
-    .open-cart{
-        z-index: 2;
-        background:url(/assets/images/wood-floor.jpg);
-        display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        flex-direction: column;
-        width: 300px;
-        height:auto;
-        border-radius: 1rem;
-        border-style: double;
-        border-color: black;
-        gap: 20px;
-        right: 20px;
-    }
-
-   
-
-    .logo {
-        width: 600px;
-        height: 600px;
     }
 
     .hero{
-        max-width: 992px;
+        width: 100%;
+    }
+
+    .hero-description{
+        width: 100%;
+        gap: 100px;
+    }
+
+    .logo{
+        width: 200px;
+        height: auto;
+        margin-top: 20px;
     }
 
     .hero-speach{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .forge-img {
         width: 300px;
-        font-size: 22px;
-    }
-
-    .forge-img{
-        width: 400px;
-        height: 200px;
-        padding-left: 20px;
-    }
-
-    .presentation{
-        max-width: 992px;
-    }
-
-    .hot-sales{
-        max-width: 992px;
+        height: auto;
+        margin-left: 50px;
     }
 
     .card-container{
-        width: 800px;
+        width: 80%;
     }
 
     footer{
-        max-width: 992px;
+        gap: 50px;
     }
 
-    .add-modal{
-        max-width: 992px;
+    .footer-logo{
+        width: 100px;
+        height: auto;
     }
-    
+
+    .social-links {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width:576px) {
-
-    .icons {
-        right: 340px;
-    }
-
+    
     .cart{
         left: 0;
         width: 100%;
@@ -112,39 +90,20 @@
         flex-wrap: wrap;
     }
 
-
-    .logo {
-        width: 270px;
-        height: 270px;
-    }
-
     .forge-img{
         display: none;
     }
 
-    .presentation-info {
-        width: 340px;
-        font-size: 20px;
-    }
-
     .section-divider{
-        width: 310px;
-    }
-
-    .offers{
-        font-size: 28px;
+        width: 300px;
     }
 
     .categories {
         flex-direction: column;
     }
 
-    .category {
-        font-size: 16px;
-
+    .footer-logo {
+        display: none;
     }
 
-    .product-card {
-        width: 400px;
-    }
 }
