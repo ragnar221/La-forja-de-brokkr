@@ -1,0 +1,150 @@
+@media (max-width:992px) {
+
+    nav{
+        justify-content: end;
+        max-width: 992px;
+        width: 100vh;
+    }
+    
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 75%;
+        width: 90%;
+        z-index: 2;
+    }
+
+    
+    
+    .menu-icon{
+        display: flex;
+    }
+    
+    
+    .open-menu{
+        display: flex;
+        z-index: 2;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+        background: url(/assets/images/wood-floor.jpg);
+        border-radius: 1em;
+        border-style: double;
+        gap: 30px;
+        font-size: 20px;
+    }
+    
+    .open-cart{
+        z-index: 2;
+        background:url(/assets/images/wood-floor.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 300px;
+        height:auto;
+        border-radius: 1rem;
+        border-style: double;
+        border-color: black;
+        gap: 20px;
+        right: 20px;
+    }
+
+   
+
+    .logo {
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero{
+        max-width: 992px;
+    }
+
+    .hero-speach{
+        width: 300px;
+        font-size: 22px;
+    }
+
+    .forge-img{
+        width: 400px;
+        height: 200px;
+        padding-left: 20px;
+    }
+
+    .presentation{
+        max-width: 992px;
+    }
+
+    .hot-sales{
+        max-width: 992px;
+    }
+
+    .card-container{
+        width: 800px;
+    }
+
+    footer{
+        max-width: 992px;
+    }
+
+    .add-modal{
+        max-width: 992px;
+    }
+    
+}
+
+@media (max-width:576px) {
+
+    .icons {
+        right: 340px;
+    }
+
+    .cart{
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .cart-item{
+        flex-wrap: wrap;
+    }
+
+
+    .logo {
+        width: 270px;
+        height: 270px;
+    }
+
+    .forge-img{
+        display: none;
+    }
+
+    .presentation-info {
+        width: 340px;
+        font-size: 20px;
+    }
+
+    .section-divider{
+        width: 310px;
+    }
+
+    .offers{
+        font-size: 28px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        font-size: 16px;
+
+    }
+
+    .product-card {
+        width: 400px;
+    }
+}

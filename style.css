@@ -1,0 +1,855 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Foldit', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    margin: 0 auto;
+    z-index: 999;
+}
+nav{  
+    background:url(/assets/images/wood-floor.jpg);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    gap: 150px;
+    padding: 15px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: baseline;
+    gap: 15px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+a{
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    color: antiquewhite;
+    font-size: 15px;
+}
+
+.nav-link{
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+
+
+.cart-bubble {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    text-align: center;
+    background: blue;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    border-radius: 50%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-img{
+    width: 50px;
+    height:50px;
+    order: 4;
+    color: antiquewhite;
+}
+
+.menu-toggle{
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    background: url(/assets/images/wood-floor.jpg);
+    border-radius: 1em;
+}
+
+
+.open-menu{
+    display: flex;
+}
+
+.menu-label {
+    display: none;
+}
+
+.cart{
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    z-index: 2;
+    background:url(/assets/images/wood-floor.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 375px;
+    height: auto;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    border-left: 1px solid black;
+    padding: 50 30px;
+    gap: 30px;
+    transform: translate(200%);
+    transition: all 0.5 cubic-bezier(0.92, 0,01, 0,35, 0,99);
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: black;
+    background-image: url(./assets/images/metal-background.jpg);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 20px;
+    width: 20px;
+}
+
+.cart-product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart ::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    font-size: 20px;
+    font-weight: 600;
+    align-self: center;
+    color: antiquewhite;
+}
+
+.empty-msg{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(249, 220, 183);
+}
+
+.products-detail{
+    min-width: 110px;
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    font-weight: 800;
+    gap: 100px;
+    padding: 25px;
+}
+
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+}
+
+.item-info h3{
+    color: antiquewhite;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item-title {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-price{
+    color: green;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.products-handler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.item-quantity{
+    color: rgb(25, 107, 29);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.up{
+    color: rgb(67, 65, 65);
+}
+
+.down {
+    background-color: burlywood;
+    color: rgb(67, 65, 65);
+    border: 1px solid black;
+    width: 10px;
+    height: 20px;
+    text-align: center;
+}
+
+.divider{
+    border: 0.5px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+.products-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 15px;
+}
+
+.products-total span {
+    color: antiquewhite;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.confirm-buy {
+    border-style: none;
+    background: none;
+    font-size: 26px;
+    font-family: 'pt sans narrow';
+    color: antiquewhite;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-delete{
+    border-style: none;
+    background: none;
+    font-size: 26px;
+    font-family: 'pt sans narrow';
+    color: antiquewhite;
+    font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.products-total{
+    display: flex;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.open-cart {
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0,99);
+}
+
+
+
+.overlay{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 65px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0,37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.show-overlay{
+    display: block;
+}
+
+.user-label{
+    display: flex;
+    order: 5;
+    position: relative;
+    right: 70px;
+    cursor: pointer;  
+    color: antiquewhite;
+}
+
+
+.user-menu{
+    display: none;
+    background-color: black;
+    background-image: url(./assets/images/wood-floor.jpg);
+    width: 150px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 30px;
+    position: absolute;
+    top: 63px;
+    left: 92%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.user-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.user-menu li {
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.user-open{
+    display: flex;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+}
+
+.hero{
+    background-image: url(/assets/images/runes-grass.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    gap: 70px;
+}
+
+.logo{
+    width: 900px;
+    height: 900px;
+    align-self: center;
+    padding-top: 50px;
+}
+
+.hero-descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.hero-speach{
+    width: 600px;
+    font-size: 45px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    color: antiquewhite;
+    font-family: 'pt sans narrow';
+}
+
+.forge-img{
+    width: 600px;
+    height: 370px;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+}
+
+.presentation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgb(26, 25, 25);
+}
+
+.presentation-info{
+    width: 400px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-family: 'bacasime antique';
+    text-align: center;
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+.section-divider{
+    border-radius: 1em;
+    width: 600px;
+    height: 3px;
+    background-color:  rgb(243, 205, 156);
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-family: 'bacasime antique';
+    font-size: 70px;
+    padding: 100px;
+    text-align: center;
+    align-self: center;
+    width: 1000px;
+    color: rgb(243, 205, 156);
+}
+
+.hot-sales{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgb(26, 25, 25);
+    gap: 80px;
+    padding-bottom: 60px;
+}
+
+.offers{
+    padding-top: 40px;
+    color: rgb(243, 205, 156);
+    font-size: 70px;
+    font-weight: 700;
+    font-family:'bacasime antique' ;
+}
+
+.categories{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.category {
+    background-color: rgb(200, 200, 159);
+    font-size: 24px;
+    font-family: 'bacasime antique';
+    color: antiquewhite;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(57, 57, 54);
+    box-shadow: red 1px 2px 2px 4px;
+    font-weight: 600;
+}
+
+.card-container{
+    background: url(./assets/images/metal-background.jpg);
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    border: 3px solid rgb(25, 26, 25);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.product-cards{
+    background-image: url(./assets/images/golden-background.jpg);
+    background-color: rgb(73, 72, 72);
+    color: black;
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: black 4px 4px 4px 4px;
+}
+
+.product-img{
+    width: 120px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: black 2px 2px 2px 2px;
+    margin: 10px;
+}
+
+.product-cards h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'bacasime antique';
+}
+
+.product-card ul{
+    list-style-type: none;
+    text-align: start;
+    font-style: italic;
+    font-family: 'bacasime antique';
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.card-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceProduct {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.add-btn{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 14px;
+    width: 100px;
+    height: auto;
+    border-radius: 14px;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.show-btn{
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 4px solid gray;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    background: black;
+    color: antiquewhite;
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.footer-contact{
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.footer-data{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.social-logo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    background-color: antiquewhite;
+    color: white;
+    cursor: not-allowed;
+    border: none;
+}
+
+.disabled:hover {
+    background-color: antiquewhite;
+    color: white;
+    cursor: not-allowed;
+    border: none;
+}
+
+.add-modal {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgb(249, 252, 137);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    transform: translateY(200%);
+}
+
+.active-modal {
+    transform: translateY(0);
+    transition: all 0.5s ease-in;
+}
+
+/*registro*/
+
+.registry-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registry-zone h1{
+    color: antiquewhite;
+}
+
+.registry-zone p {
+    color: antiquewhite;
+    font-size: 25px;
+    width: 50%;
+    align-self: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registry-form{
+    background-image: url(/assets/images/golden-background.jpg);
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 1em;
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+input{
+    width: 200px;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+::placeholder{
+    font-style: italic;
+}
+
+.registry-button{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 12px;
+    width: 150px;
+    height: auto;
+    border-radius: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.enviar{
+    margin-top: 20px;
+    border: none;
+    border-radius: 1em;
+    font-size: 14px;
+    background-color: rgb(243, 205, 156);
+    font-family: 'Bacasime Antique', serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.errores {
+    color: red;
+    font-weight: 600;
+}
+
+.ok {
+    color: rgb(142, 215, 33);
+    font-weight: 600;
+}
+
+/*login*/
+
+.login-body{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-area{
+    background-color: black;
+    background-image: url(./assets/images/metal-background.jpg);
+    width: 40%;
+    height: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+}
+
+.login-intro{
+    font-family: 'Bacasime Antique', serif;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.login-button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 1em;
+    font-size: 14px;
+    background-color: rgb(243, 205, 156);
+    padding: 5px;
+}
+
+.return-button{
+    display: flex;
+    background-color:  rgb(243, 205, 156);
+    border-radius: 1em;
+    border: 2px solid whitesmoke;
+    margin-top: 30px;
+}
+
+.return-link{
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+}

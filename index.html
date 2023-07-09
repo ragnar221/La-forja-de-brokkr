@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La forja de brokkr</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaquerys.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Foldit:wght@300&family=PT+Sans+Narrow&display=swap');
+          </style>       
+    </head>
+<body>
+    <header>
+        <nav class="nav">
+             <ul class="nav-links">
+                <li class="nav-link"><a href="">armeria</a></li>
+                <li class="nav-link"><a href="">artesanias</a></li>
+                <li class="nav-link"><a href="/registry.html">registrate</a></li>
+                <li class="nav-link"><a href="/login.html">Login</a></li>
+            </ul>
+        <div class="icons">
+            <div class="menu-icon">
+                <i class="fa-sharp fa-solid fa-bars menu-img" id="menu-btn"></i>
+            </div>
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+        </div>
+            <div class="cart">
+                <h2>tus productos</h2>
+                <div class="cart-container">
+                </div>
+                  <span class="divider"></span>
+                <div class="products-total">
+                    <p>total</p>
+                    <span class="total"></span>
+                </div>
+                <button class="confirm-buy">comprar</button>
+                <button class="btn-delete">vaciar carrito</button>
+            </div>
+              <div class="overlay"></div>           
+        </nav>     
+    </header>
+    <section class="hero">
+        <img class="logo" src="/assets/images/logo_transparent.png" alt="logo">
+        
+        <div class="hero-descripcion">
+            <p class="hero-speach">Forjamos con la pasion del fuego y voluntad de acero.
+                espadas, escudos, cascos y mucho mas!
+            </p>
+            <img class="forge-img" src="/assets/images/forge.jpg" alt="forge">
+        </div> 
+    </section>
+    <section class="presentation">
+        <h1>Conocenos</h1>
+        <p class="presentation-info">Somos maestros forjadores especializados en espadas, escudos y muchas otras armas y replicas tanto de la era medieval como replicas de peliculas y videojuegos.
+            ¡si fue imaginado, nosotros lo forjamos!
+            Tambien realizamos trabajos a pedido con un tiempo de demora aproximado de 20 a 30 dias (dependiendo de la complejidad del pedido).
+            envianos fotos de tu replica deseada y nos pondremos a trabajar.
+        </p>
+        <span class="section-divider"></span>
+    </section>
+    <section id="products" class="hot-sales">
+           <h2 class="offers">Nuevos productos</h2>
+        <div class="categories">
+            <button class="category active">todas</button>
+            <button class="category" data-category="espadas">Espadas</button>
+            <button class="category" data-category="escudos">escudos</button>
+            <button class="category" data-category="varias">Armas varias</button>
+            <button class="category" data-category="cascos">Cascos</button>
+        </div>
+        <div class="card-container">
+                <div class="product-card"> 
+                </div>       
+        </div>
+        <button class="show-btn">mostrar mas</button>
+    </section>
+    <footer>
+        <div class="footer-contact">
+            <h2>contacto</h2>
+            <ul class="footer-data">
+                <li>calle falsa 1234, Ituzaingo</li>
+                <li>011-1234-5678</li>
+                <li>forjadebrokkr@outlook.com</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <img class="social-logo" src="/assets/images/facebook-logo.png" alt="facebook">
+            <img class="social-logo" src="/assets/images/instagram-logo.png" alt="instagram">
+            <img class="social-logo" src="/assets/images/twitter-logo.png" alt="twitter">
+        </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./data.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
