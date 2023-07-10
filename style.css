@@ -73,7 +73,7 @@ a{
     top: -8px;
     right: -8px;
     text-align: center;
-    background: blue;
+    background: rgb(15, 199, 76);
     color: white;
     font-size: 10px;
     font-weight: 500;
@@ -157,15 +157,17 @@ a{
 }
 
 .cart h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    font-family: 'Bacasime Antique', serif;
     align-self: center;
     color: antiquewhite;
 }
 
 .empty-msg{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 22px;
+    text-align: center;
     font-weight: 700;
     color: rgb(249, 220, 183);
 }
@@ -174,7 +176,7 @@ a{
     min-width: 110px;
     display: flex;
     flex-direction: row;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Bacasime Antique', serif;
     color: antiquewhite;
     font-weight: 800;
     gap: 100px;
@@ -190,8 +192,11 @@ a{
 
 .item-info h3{
     color: antiquewhite;
+    background-color: black;
+    padding: 7px;
+    border-radius: 1em;
     font-weight: 400;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Bacasime Antique', serif;
     font-size: 18px;
 }
 
@@ -206,6 +211,7 @@ a{
     font-weight: 600;
     font-size: 26px;
     font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 15px;
 }    
 
 .products-handler{
@@ -628,7 +634,7 @@ h2{
     border: none;
 }
 
-.add-modal {
+.add-msg {
     padding: 15px 0px;
     display: flex;
     align-items: center;
@@ -642,7 +648,7 @@ h2{
     transform: translateY(200%);
 }
 
-.active-modal {
+.active-msg {
     transform: translateY(0);
     transition: all 0.5s ease-in;
 }

@@ -205,4 +205,3 @@ const divideProductsInParts = (size) => {
         activeFilter: null,
     };
 
-    let productsToCart = [];

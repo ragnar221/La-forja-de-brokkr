@@ -11,7 +11,7 @@ const CartImg = document.querySelector(".cart-product-img");
 const overlay = document.querySelector(".overlay");
 const productsCart = document.querySelector(".cart-container");
 const total = document.querySelector(".total");
-const successModal = document.querySelector(".add-modal");
+const successMsg = document.querySelector(".add-msg");
 const productCard = document.querySelector(".product-card");
 const addBtn = document.querySelector(".add-btn");
 const buyBtn = document.querySelector(".confirm-buy");
@@ -240,11 +240,11 @@ const addUnitToProduct = (product) => {
     });
 };
 
-const showSuccessModal = (msg) => {
-    successModal.classList.add("active-modal");
-    successModal.textContent = msg;
+const showSuccessMsg = (msg) => {
+    successMsg.classList.add("active-msg");
+    successMsg.textContent = msg;
     setTimeout(() => {
-        successModal.classList.remove("active-modal");
+        successMsg.classList.remove("active-msg");
     }, 1500);
 };
 
@@ -288,10 +288,10 @@ const addProduct = (e) => {
     const product = createProductData(e.target.dataset);
     if (isExistingCartProduct(product.id)) {
         addUnitToProduct(product);
-        showSuccessModal("producto agregado al carrito exitosamente");
+        showSuccessMsg("producto agregado al carrito exitosamente");
     } else {
         createCartProduct(product);
-        showSuccessModal("producto agregado al carrito exitosamente");
+        showSuccessMsg("producto agregado al carrito exitosamente");
     }
     updateCartState();
 };
