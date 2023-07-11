@@ -7,7 +7,6 @@ const barsMenu = document.querySelector(".nav-links");
 const menuIcon = document.querySelector(".menu-icon");
 const CartBtn = document.querySelector(".cart-label");
 const CartMenu = document.querySelector(".cart");
-const CartImg = document.querySelector(".cart-product-img");
 const overlay = document.querySelector(".overlay");
 const productsCart = document.querySelector(".cart-container");
 const total = document.querySelector(".total");

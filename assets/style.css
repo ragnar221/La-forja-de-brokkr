@@ -36,6 +36,7 @@ nav,
     justify-content: center;
     align-self: baseline;
     gap: 15px;
+    padding-top: 10px;
 }
 
 .nav{
@@ -117,7 +118,7 @@ a{
     padding: 50 30px;
     gap: 30px;
     transform: translate(200%);
-    transition: all 0.5 cubic-bezier(0.92, 0,01, 0,35, 0,99);
+    transition: all 0.05 cubic-bezier(0.92, 0,01, 0,35, 0,99);
 }
 
 .cart-container {
@@ -192,12 +193,11 @@ a{
 
 .item-info h3{
     color: antiquewhite;
-    background-color: black;
     padding: 7px;
     border-radius: 1em;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Bacasime Antique', serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .item-title {
@@ -211,6 +211,7 @@ a{
     font-weight: 600;
     font-size: 26px;
     font-family: 'PT Sans Narrow', sans-serif;
+    align-self: center;
 }    
 
 .products-handler{
@@ -511,7 +512,7 @@ h1{
     font-family: 'bacasime antique';
 }
 
-.product-card ul{
+.product-cards ul li{
     list-style-type: none;
     text-align: start;
     font-style: italic;
@@ -686,7 +687,7 @@ h2{
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left:50px;
+    padding: 50px;
     gap: 20px;
     justify-content: center;
     align-items: baseline;
@@ -725,13 +726,13 @@ input{
     margin-bottom: 10px;
 }
 
-.errores {
+.errors {
     color: red;
     font-weight: 600;
 }
 
 .ok {
-    color: rgb(142, 215, 33);
+    color: rgb(72, 112, 12);
     font-weight: 600;
 }
 

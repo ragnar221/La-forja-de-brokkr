@@ -5,7 +5,7 @@ const confirmPass = document.getElementById("confirm-pass");
 const age = document = document.getElementById("age");
 const phoneNumber = document.getElementById("phone");
 const eMail= document.getElementById("email");
-const parrafo = document.getElementById('error');
+const warning = document.getElementById('error');
 const regBtn = document.querySelector("enviar");
 const regName = document.getElementById("first-name");
 
@@ -18,39 +18,39 @@ const saveRegistry = () => {
   form.addEventListener('submit',(e)=> {
         e.preventDefault();
         let error = '';
-        let enviar = false;
+        let send = false;
         let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
         if (userName.value.length < 6) {
             error += `debes usar un nombre de mas de seis caracteres <br>`;
-            enviar = true;
+            send = true;
         }
         if (!validatePasswordSymbol(pass.value)) {
             error += `la contraseña debe tener una mayuscula, minuscula, numero y simbolo <br>`;
-            enviar = true;
+            send = true;
         }
         if (!confirmPassword(pass.value, confirmPass.value)) {
             error += `Las contraseñas no coinciden <br>`;
-            enviar = true;
+            send = true;
         }
-        if (age.value.length > 110) {
-            error += `numero de edad excesivo <br>`;
-            enviar = true;
+        if (!validateAge(age.value)) {
+            error += `debes escribir tu edad <br>`;
+            send = true;
         }
         
         if (!regexEmail.test(eMail.value)) {
             error += `La direccion de E-Mail no es valida`;
-            enviar = true;
+            send = true;
         }
         if (!validatePhone(phoneNumber.value)) {
             error += `el numero de telefono no es valido <br>`;
-            enviar = true;
+            send = true;
         }
-        if (enviar) {
-            parrafo.classList.add('errores');
-            parrafo.innerHTML = error;
+        if (send) {
+            warning.classList.add('errors');
+            warning.innerHTML = error;
         } else {
-            parrafo.classList.add('ok');
-            parrafo.innerHTML = 'enviado';
+            warning.classList.add('ok');
+            warning.innerHTML = 'enviado';
         }
             
            });
@@ -63,6 +63,11 @@ const saveRegistry = () => {
     };
     const confirmPassword = (password, confirmPassword) => {
         return password === confirmPassword;
+    };
+
+    const validateAge = (age) => {
+        let re = /^\d{10}$/;
+        return re.test(age);
     };
     
     const validatePhone = (phoneNumber) => {
