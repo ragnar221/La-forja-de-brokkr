@@ -90,6 +90,10 @@
         flex-wrap: wrap;
     }
 
+    .item-info h3{
+        font-size: 14px;
+    }
+
     .forge-img{
         display: none;
     }

@@ -27,11 +27,11 @@ const saveCart = () => {
 };
 
 const createProductTemplate = (product) => {
-    const { id, name, type ,material, tang, price, cardImg, } = product;
+    const { id, name, type ,material, tang, price, img, } = product;
 
     return  `
      <div class="product-cards">
-    <img class="product-img" src=${cardImg} alt=${name} />
+    <img class="product-img" src=${img} alt=${name} />
     <h3>${name}</h3>
     <ul>
         <li class="product-data">${type}</li>
@@ -39,7 +39,7 @@ const createProductTemplate = (product) => {
         <li class="product-data">${tang}</li>
     </ul>
     <p class="priceProduct">$ ${price}</p>
-    <button class="add-btn" data-id="${id}"data-name="${name}" data-price="${price}" data-img="${cardImg}" >comprar</button>
+    <button class="add-btn" data-id="${id}"data-name="${name}" data-price="${price}" data-img="${img}" >comprar</button>
 </div>
 
 `;
@@ -179,13 +179,12 @@ const closeOnOverlayClick = () => {
 };
 
 const createCartProductTemplate = (cartProduct) => {
-    const { id, name, price, Img, quantity } = cartProduct;
+    const { id, name, price, img, quantity } = cartProduct;
     return `
      <div class="cart-item">
-            <img
-                 src=${Img}
-                 alt="imagen del carro"
-                             
+            <img class="cart-img"
+                 src=${img}
+                 alt=${name}
             />
             <div class="item-info">
                 <h3 class="item-title">${name}</h3>
@@ -217,12 +216,12 @@ const getCartTotal = () => {
 };
 
 const showCartTotal = () => {
-    total.innerHTML = `${getCartTotal().toFixed(2)} $`;
+    total.innerHTML = `${getCartTotal().toFixed(2)}0$`;
 };
 
 const createProductData = (product) => {
-    const { id, name, price, cardImg } = product;
-    return { id, name, price, cardImg };
+    const { id, name, price, img } = product;
+    return { id, name, price, img };
 };
 
 const isExistingCartProduct = (productId) => {

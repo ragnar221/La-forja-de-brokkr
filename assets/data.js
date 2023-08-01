@@ -7,7 +7,7 @@ const ProductsData = [
         tang:"full tang",
         price: "26.800",
         category:"espadas",
-        cardImg:"./assets/images/templar-sword.jpg",
+        img:"./assets/images/templar-sword.jpg",
     },
 
     {
@@ -18,7 +18,7 @@ const ProductsData = [
         tang:"full tang",
         price: "30.200",
         category:"espadas",
-        cardImg:"./assets/images/viking-sword.jpg",
+        img:"./assets/images/viking-sword.jpg",
     },
 
     {
@@ -29,7 +29,7 @@ const ProductsData = [
         tang:"full tang",
         price: "43.600",
         category:"espadas",
-        cardImg:"./assets/images/german-battle-sword.jpg",
+        img:"./assets/images/german-battle-sword.jpg",
     },
 
     {
@@ -40,7 +40,7 @@ const ProductsData = [
         tang:"full tang",
         price: "29.500",
         category:"espadas",
-        cardImg:"./assets/images/crusader-sword.jpg",
+        img:"./assets/images/crusader-sword.jpg",
     },
 
     {
@@ -51,7 +51,7 @@ const ProductsData = [
         tang:"full tang",
         price: "40.800",
         category:"espadas",
-        cardImg:"./assets/images/highland-claymore.jpg",
+        img:"./assets/images/highland-claymore.jpg",
     },
 
     {
@@ -62,7 +62,7 @@ const ProductsData = [
         tang:"full tang",
         price: "38.500",
         category:"espadas",
-        cardImg:"./assets/images/bastard-sword.jpg",
+        img:"./assets/images/bastard-sword.jpg",
     },
 
     {
@@ -73,7 +73,7 @@ const ProductsData = [
         tang:"full tang",
         price: "33.000",
         category:"espadas",
-        cardImg:"./assets/images/gladius-Hispaniensis-sword.jpg",
+        img:"./assets/images/gladius-Hispaniensis-sword.jpg",
     },
 
     {
@@ -84,7 +84,7 @@ const ProductsData = [
         tang:"mid tang",
         price: "44.000",
         category:"espadas",
-        cardImg:"./assets/images/anduril-sword.jpg",
+        img:"./assets/images/anduril-sword.jpg",
     },
 
     {
@@ -95,7 +95,7 @@ const ProductsData = [
         tang:"mid tang",
         price: "55.900",
         category:"espadas",
-        cardImg:"./assets/images/frostmourne-sword.jpg",
+        img:"./assets/images/frostmourne-sword.jpg",
     },
 
     {
@@ -106,7 +106,7 @@ const ProductsData = [
         tang:"resistente a golpes",
         price: "24.600",
         category:"escudos",
-        cardImg:"./assets/images/norman-shield.jpg",
+        img:"./assets/images/norman-shield.jpg",
     },
 
     {
@@ -117,7 +117,7 @@ const ProductsData = [
         tang:"resistente a golpes",
         price: "23.000",
         category:"escudos",
-        cardImg:"./assets/images/viking-shield.jpeg",
+        img:"./assets/images/viking-shield.jpeg",
     },
 
     {
@@ -128,7 +128,7 @@ const ProductsData = [
         tang:"resistente a golpes",
         price: "25.500",
         category:"escudos",
-        cardImg:"./assets/images/crusader-shield.jpg",
+        img:"./assets/images/crusader-shield.jpg",
     },
 
     {
@@ -139,7 +139,7 @@ const ProductsData = [
         tang:"full tang",
         price: "36.000",
         category:"varias",
-        cardImg:"./assets/images/halberd.jpg",
+        img:"./assets/images/halberd.jpg",
     },
 
     {
@@ -150,7 +150,7 @@ const ProductsData = [
         tang:"full tang",
         price: "38.000",
         category:"varias",
-        cardImg:"./assets/images/dane-axe.jpg",
+        img:"./assets/images/dane-axe.jpg",
     },
 
     {
@@ -161,7 +161,7 @@ const ProductsData = [
         tang:"cadena fija",
         price: "32.400",
         category:"varias",
-        cardImg:"./assets/images/flegel.jpg",
+        img:"./assets/images/flegel.jpg",
     },
 
     {
@@ -172,7 +172,7 @@ const ProductsData = [
         tang:"decorativo",
         price: "33.700",
         category:"cascos",
-        cardImg:"./assets/images/templar-helmet.webp",
+        img:"./assets/images/templar-helmet.webp",
     },
 
     {
@@ -183,7 +183,7 @@ const ProductsData = [
         tang:"decorativo",
         price: "35.400",
         category:"cascos",
-        cardImg:"./assets/images/viking-helmet.jpg",
+        img:"./assets/images/viking-helmet.jpg",
     },
 
     {
@@ -194,16 +194,16 @@ const ProductsData = [
         tang:"decorativo",
         price: "34.800",
         category:"cascos",
-        cardImg:"./assets/images/roman-helmet.jpg",
+        img:"./assets/images/roman-helmet.jpg",
     },
 ];
 
 const divideProductsInParts = (size) => {
-    let productsContainer = [];
+    let productsList = [];
     for (let i = 0; i < ProductsData.length; i += size) {
-        productsContainer.push(ProductsData.slice(i, i + size));
+        productsList.push(ProductsData.slice(i, i + size));
     }
-    return productsContainer;
+    return productsList;
     };
 
 

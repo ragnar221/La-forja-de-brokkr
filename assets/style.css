@@ -129,7 +129,7 @@ a{
 
 .cart-item {
     width: 300px;
-    height: auto;
+    height: 150px;
     display: flex;
     align-self: center;
     align-items: center;
@@ -142,9 +142,11 @@ a{
     border-radius: 10px;
 }
 
-.cart-item img {
-    height: 20px;
-    width: 20px;
+.cart-img {
+    width: 50px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: rgb(44, 44, 44) 2px 2px 2px 1.5px;
 }
 
 .cart-product {
@@ -163,6 +165,7 @@ a{
     font-family: 'Bacasime Antique', serif;
     align-self: center;
     color: antiquewhite;
+    text-align: center;
 }
 
 .empty-msg{
@@ -204,6 +207,7 @@ a{
     color: black;
     font-weight: 600;
     font-size: 14px;
+    text-align: center;
 }
 
 .item-price{
@@ -252,13 +256,13 @@ a{
 
 .up{
     color: rgb(55, 214, 63);
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
 }
 
 .down {
     color: rgb(249, 8, 8);
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
 }
 
@@ -483,15 +487,16 @@ h1{
 }
 
 .product-cards{
-    background-image: url(./images/golden-background.jpg);
+    background-image: url(./images/Papyrus-Paper-Wallpapers.jpg);
     background-color: rgb(73, 72, 72);
     color: black;
-    width: 250px;
+    width: 300px;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -514,7 +519,7 @@ h1{
 
 .product-cards ul li{
     list-style-type: none;
-    text-align: start;
+    text-align: center;
     font-style: italic;
     font-family: 'bacasime antique';
     font-size: 16px;
@@ -682,7 +687,7 @@ h2{
 }
 
 .registry-form{
-    background-image: url(/assets/images/golden-background.jpg);
+    background-image: url(/assets/images/forge-background.webp);
     width: 55%;
     height: auto;
     display: flex;
@@ -750,7 +755,7 @@ input{
 
 .login-area{
     background-color: black;
-    background-image: url(./images/metal-background.jpg);
+    background-image: url(/assets/images/forge-background.webp);
     width: 40%;
     height: auto;
     margin-top: 200px;
@@ -771,6 +776,12 @@ input{
     gap: 10px;
 }
 
+.login-form label {
+    color: black;
+    font-weight: 600;
+    font-family: 'Bacasime Antique', serif;
+}
+
 .login-button{
     margin-top: 20px;
     border: none;
@@ -786,6 +797,11 @@ input{
     border-radius: 1em;
     border: 2px solid whitesmoke;
     margin: 30px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
 }
 
 .return-link{
